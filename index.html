@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header section -->
+  <header>
+    <button id='mobileNavBtn'>&#9776;</button>
+    <h1 id="title-product-page">sneakers</h1>
+    <nav id="nav-menu">
+      <ul id="nav-list">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="action">
+      <img id="icon-cart" src="Images/icon-cart.svg" alt="">
+      <img id="profile-photo" src="Images/image-avatar.png" alt="">
+    </div>
+  </header>
+
+  <div id="divider"></div>
+
+    <!-- Main Collection -->
+  <section id="main-collection">
+    <div id="ilustration-section">
+      <img src="Images/image-product-1.jpg" alt="" id="imageProduct">
+        <div id="ilustration-section-slider">
+          <img class="imgProduct" src="Images/image-product-1-thumbnail.jpg" alt="">
+          <img class="imgProduct" src="Images/image-product-4-thumbnail.jpg" alt="">
+          <img class="imgProduct" src="Images/image-product-2-thumbnail.jpg" alt="">
+          <img class="imgProduct" src="Images/image-product-3-thumbnail.jpg" alt="">
+        </div>
+    </div>
+      <div id="description-section">
+        <h4>sneaker company</h4>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber rubber outer sole. They'll withstand
+          and everything the weather can offer.
+        </p>
+        <h3>$125.00 <span>50%</span></h3>
+        <h5>$250.00</h5>
+        <div id="little-buy-section">
+          <button id="minus">-</button>
+          <h3 id="quantity">0</h3>
+          <button id="plus">+</button>
+          <button id="add-to-cart"><span></span>Add to cart</button>
+        </div>
+      </div>
+  </section>
+
+    <!-- Modal section-->
+  <div class="modal" id="myModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="Images/image-product-1.jpg" alt="" class="modal-contenido" id="imageModal">
+    <div>bkarow</div>
+    <div id="ilustration-section-slider">
+      <img class="imgProduct" src="Images/image-product-1-thumbnail.jpg" alt="">
+      <img class="imgProduct" src="Images/image-product-4-thumbnail.jpg" alt="">
+      <img class="imgProduct" src="Images/image-product-2-thumbnail.jpg" alt="">
+      <img class="imgProduct" src="Images/image-product-3-thumbnail.jpg" alt="">
+    </div>
+    <button id="toLeft"><</button>
+    <button id="toRight">></button>
+  </div>
+
+    <!-- Modal section mobile navbar -->
+  <div class='modal' id='mobileModal'>
+    <span class='close' onclick="closeMobileNavBar()">&times;</span>
+    <div>bkarow</div>
+    <nav id="nav-menu-mobile">
+      <ul id="nav-list-mobile">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <div id="divider"></div>
+
+  <footer id="footer-section">
+    <h1 id="title-product-page">sneakers</h1>
+    <div id="social-media">
+      <i class="fa-brands fa-instagram" id="insta"></i>
+      <i class="fa-brands fa-whatsapp" id="what"></i>
+      <i class="fa-brands fa-facebook" id="face"></i>
+    </div>
+  </footer>
+
+  <script src="script.js"></script> 
+  <script src="https://kit.fontawesome.com/d30a954405.js" crossorigin="anonymous"></script>
+</body>
+</html>
